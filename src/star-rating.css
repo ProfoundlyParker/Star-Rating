@@ -1,0 +1,15 @@
+/* Displays stars in a row */
+.star-rating-container {
+  display: flex;
+  flex-direction: row;
+}
+/* Star Styling */
+.star {
+  color: black;
+  cursor: pointer;
+  font-size: 40px;
+}
+/* Star styling when hovering */
+.star.active {
+  color: yellow;
+}
