@@ -1,5 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
-import './star-rating.css'
+import './star-rating.css';
+import tachyons from 'tachyons';
 
 
 const StarRating = ({maxRating = 5, onChange = () => {}}) => {
@@ -36,7 +37,13 @@ const StarRating = ({maxRating = 5, onChange = () => {}}) => {
               onMouseLeave={() => setHoveredRating(0)}
               >
               {/* Star Code */}
-              &#9733;
+              <article class="mw5 hidden ba mv4 b--blue br4-m">
+              <div class="pa3">
+                <p class="f3 f3-ns measure mv0">
+                  &#9733;
+                </p>
+              </div>
+            </article>
             </div>
           )
         })

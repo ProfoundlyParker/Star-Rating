@@ -2,14 +2,15 @@
 .star-rating-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 /* Star Styling */
 .star {
-  color: black;
+  color: #c9e8f3;
   cursor: pointer;
   font-size: 40px;
 }
 /* Star styling when hovering */
 .star.active {
-  color: yellow;
+  color: #fbfb09;
 }
